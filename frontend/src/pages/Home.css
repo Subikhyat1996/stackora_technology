@@ -98,16 +98,36 @@
 }
 
 .service-card {
-    background: var(--color-bg);
+    background: var(--gradient-surface);
     padding: 2rem;
     border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-slow);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--color-accent);
+    box-shadow: var(--shadow-lg), var(--shadow-accent);
 }
 
 .service-icon {
@@ -179,9 +199,17 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
-    background: var(--color-surface);
+    padding: 1.25rem;
+    background: var(--gradient-surface);
     border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+}
+
+.feature:hover {
+    transform: translateX(5px);
+    border-color: rgba(255, 215, 0, 0.3);
+    box-shadow: var(--shadow-md);
 }
 
 .feature-icon {
@@ -202,16 +230,36 @@
 }
 
 .work-card {
-    background: var(--color-bg);
+    background: var(--gradient-surface);
     border-radius: var(--border-radius);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-slow);
+    position: relative;
+}
+
+.work-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.work-card:hover::before {
+    transform: scaleX(1);
 }
 
 .work-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--color-accent);
+    box-shadow: var(--shadow-lg), var(--shadow-accent);
 }
 
 .work-image {

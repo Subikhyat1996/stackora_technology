@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from '../api/axios';
+import GitHubProjects from '../components/GitHubProjects';
+import Testimonials from '../components/Testimonials';
+import StatsCounter from '../components/StatsCounter';
 import './Home.css';
 
 const Home = () => {
@@ -143,6 +146,9 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Stats Counter */}
+            <StatsCounter />
+
             {/* Projects Section */}
             {projects.length > 0 && (
                 <section className="work">
@@ -171,6 +177,12 @@ const Home = () => {
                     </div>
                 </section>
             )}
+
+            {/* GitHub Projects Section */}
+            <GitHubProjects />
+
+            {/* Testimonials */}
+            <Testimonials />
         </div>
     );
 };
