@@ -1,0 +1,131 @@
+.careers-page {
+    padding-top: 80px;
+}
+
+.careers-hero {
+    background: var(--color-surface);
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+
+.careers-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.careers-hero p {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+}
+
+.careers-section {
+    padding: 6rem 0;
+}
+
+.careers-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--color-surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--color-accent);
+}
+
+.filter-btn.active {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border-color: var(--color-accent);
+}
+
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.career-card {
+    background: var(--color-surface);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+    text-decoration: none;
+    color: var(--color-text);
+    display: block;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.career-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.career-header h3 {
+    font-size: 1.3rem;
+    flex: 1;
+}
+
+.department-badge {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.career-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.career-excerpt {
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.career-footer {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.apply-link {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.no-careers {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.no-careers h3 {
+    margin-bottom: 1rem;
+}
+
+.no-careers p {
+    color: var(--color-text-secondary);
+}

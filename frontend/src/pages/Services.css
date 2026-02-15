@@ -1,0 +1,93 @@
+.services-page {
+    padding-top: 80px;
+}
+
+.services-hero {
+    background: var(--color-surface);
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+
+.services-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+}
+
+.services-hero p {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+}
+
+.services-section {
+    padding: 6rem 0;
+}
+
+.service-card-detailed {
+    background: var(--color-surface);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.service-card-detailed:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+.service-icon-large {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-card-detailed h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card-detailed > p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.service-features {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.service-features li {
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.service-pricing {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.services-cta {
+    text-align: center;
+    margin-top: 6rem;
+    padding: 4rem 2rem;
+    background: var(--color-surface);
+    border-radius: var(--border-radius);
+}
+
+.services-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services-cta p {
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+}
+
+.loading {
+    text-align: center;
+    padding: 4rem;
+    color: var(--color-text-secondary);
+}
